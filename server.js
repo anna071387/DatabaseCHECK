@@ -33,4 +33,29 @@ function addDepartment(departmentName) {
     .catch(err => {
         console.log(err)
     })
-}
+};
+
+function addRole(RoleTitle) {
+  const newRole = {role: titleName}
+  db.promise().query(('INSERT INTO role SET ?', newRole)
+  .then(([rows, fields]) => {
+      console.log('rows', rows);
+      console.log('fields', fields);
+
+  })
+  .catch(err => {
+      console.log(err)
+  })
+};
+function addEmployee(employee) {
+  const newEmployee = {Employee: first_name, last_name, manager_id}
+  db.promise().query(('INSERT INTO employee SET ?', newEmployee)
+  .then(([rows, fields]) => {
+      console.log('rows', rows);
+      console.log('fields', fields);
+
+  })
+  .catch(err => {
+      console.log(err)
+  })
+};
