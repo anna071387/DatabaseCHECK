@@ -1,10 +1,10 @@
 //This will allow to seed date into employee table
 
-const sequelize = require("./connection");
+const sequelize = require("../connection");
 // must include sequilize connection
-const Employee = require("./Models/employee");
+const Employee = require("./models/employee.js");
 
-const employeesSeedData = require("./employeesSeedData.json");
+const employeesSeedData = require("./employeeSeeds.json");
 
 const seedEmployeeData = async () => {
   await sequelize.sync({ force: true });

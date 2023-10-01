@@ -1,9 +1,9 @@
 //Proves data for seeding departments
 
 const sequelize = require("./connection");
-const Department = require("./Models/department");
+const Department = require("./models/department.js");
 
-const departmentsSeedData = require("./departmentsSeedData.json");
+const departmentsSeedData = require("./departmentSeeds.json");
 
 const seedDepartmentData = async () => {
   await sequelize.sync({ force: true });
@@ -13,4 +13,4 @@ const seedDepartmentData = async () => {
   process.exit(0);
 };
 
-seedDepartmentData();
+seedDepartmentSeeds();

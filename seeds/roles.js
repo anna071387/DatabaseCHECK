@@ -1,9 +1,9 @@
 // Allows to seeds data into roles tables
 
-const sequelize = require("./connection");
-const Role = require("./Models/role");
+const sequelize = require("../connection");
+const Role = require("./models/role.js");
 
-const rolesSeedData = require("./rolesSeedData.json");
+const rolesSeedData = require("./roleSeeds.json");
 
 const seedRoleData = async () => {
   await sequelize.sync({ force: true });
