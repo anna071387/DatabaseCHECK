@@ -22,10 +22,7 @@ This work is intended to provide a database manipulation capabilities to a busin
 There are a few technologies that were utilized as bases for this project: Sequelizer, .env, node.js, databases. The databases are populated with seeds and seed managers. 
 
 ![alt text](./assets/)
-![alt text](./assets/)
-![alt text](./assets/)
-![alt text](./assets/)
-![alt text](./assets/)
+
 
 
 
